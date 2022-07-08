@@ -3276,8 +3276,6 @@ function handleComplete(evt,comp) {
 	//Code to support hidpi screens and responsive scaling.
 	function makeResponsive(isResp, respDim, isScale, scaleType) {		
 		var lastW, lastH, lastS=1;		
-		window.addEventListener('resize', resizeCanvas);		
-		resizeCanvas();		
 		function resizeCanvas() {			
 			var w = lib.properties.width, h = lib.properties.height;			
 			var iw = window.innerWidth, ih=window.innerHeight;			
